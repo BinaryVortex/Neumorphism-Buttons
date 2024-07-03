@@ -1,0 +1,66 @@
+/*-------------------- CSS --------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.buttons{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+:root{
+    --shadow: -8px -8px 15px #ffff, 8px 8px 15px #8888;
+}
+.btn{
+    width: 150px;
+    aspect-ratio: 1/1;
+    box-shadow: var(--shadow);
+    margin: 20px;
+
+    border: 8px solid transparent;
+    border-radius: 15px;
+    background: transparent;
+    color: #1a1a1a;
+    text-align: center;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.1s;
+}
+.btn:hover{
+    color: #e63c1a;
+    scale: 1.1;
+}
+
+.btn i{
+    font-size: 2rem;
+
+}
+.btn span{
+    font-size: 1.2rem;
+}
+
+.btn:active,
+.active
+{
+    box-shadow: var(--shadow),
+    inset -8px -8px 15px #ffff,
+    inset 8px 8px 15px #8888 ;
+
+    color: #e63c1a;
+}
